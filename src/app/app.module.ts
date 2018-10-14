@@ -8,18 +8,22 @@ import { AppareilComponent } from './appareil/appareil.component';
 import { FormsModule } from '@angular/forms';
 
 import { AppareilService } from "./services/appareil.service";
+import { AuthComponent } from './auth/auth.component';
+import { ApparielViewComponent } from './appariel-view/appariel-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MonPremierComponent,
-    AppareilComponent
+    AppareilComponent,
+    AuthComponent,
+    ApparielViewComponent
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [AppareilService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
